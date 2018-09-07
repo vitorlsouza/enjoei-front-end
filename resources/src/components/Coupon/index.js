@@ -4,7 +4,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 
-import { BlackFriday } from './styles';
+import { Container, Content } from './styles';
 
 class Coupon extends Component {
   state = {
@@ -16,31 +16,33 @@ class Coupon extends Component {
   };
 
   render() {
-    console.log(this.state.value);
+    const styles = {
+      color: '#f77274',
+    };
     return (
-      <Fragment>
-        <h3>cupons</h3>
-        <RadioGroup
-          aria-label="coupon"
-          name="coupon"
-          value={this.state.value}
-          onChange={this.handleChange}
-        >
-          <FormControlLabel
-            value="sem"
-            control={<Radio />}
-            label="não usar cupom"
-          />
-          <BlackFriday>
+      <Container>
+        <h1>cupons</h1>
+        <Content>
+          <RadioGroup
+            aria-label="coupon"
+            name="coupon"
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <FormControlLabel
+              value="sem"
+              control={<Radio style={styles} />}
+              label="não usar cupom"
+            />
             <FormControlLabel
               value="com"
-              control={<Radio />}
+              control={<Radio style={styles} />}
               label="black friday"
             />
-            <span>R$ -12,00</span>
-          </BlackFriday>
-        </RadioGroup>
-      </Fragment>
+          </RadioGroup>
+          <span className="discount">R$ -12,00</span>
+        </Content>
+      </Container>
     );
   }
 }

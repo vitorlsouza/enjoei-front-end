@@ -4,7 +4,7 @@ import { Container, Content, Item, Total } from './styles';
 
 const Resume = () => (
   <Container>
-    <h3>Resumo</h3>
+    <h1>resumo</h1>
     <Content>
       <Item>
         <span>valor original</span>
@@ -12,7 +12,7 @@ const Resume = () => (
       </Item>
       <Item>
         <span>cupom</span>
-        <span>- R$ 12,00</span>
+        <span className="discount">- R$ 12,00</span>
       </Item>
       <Item>
         <span>frete</span>
