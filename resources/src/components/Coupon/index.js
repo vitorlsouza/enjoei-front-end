@@ -16,6 +16,7 @@ class Coupon extends Component {
   };
 
   render() {
+    console.log(this.state.value);
     return (
       <Fragment>
         <h3>cupons</h3>
