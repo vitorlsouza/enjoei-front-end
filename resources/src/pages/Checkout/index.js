@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Container, Header, Content, Coupons } from './styles';
 
+import Coupon from '../../components/Coupon';
+
 import Logo from '../../assets/logo.png';
 import Camisa from '../../assets/camisa.png';
 
@@ -13,7 +15,7 @@ const Checkout = () => (
     <Content>
       <img src={Camisa} alt="camisa" />
       <Coupons>
-        <h3>cupons</h3>
+        <Coupon />
       </Coupons>
     </Content>
   </Container>
