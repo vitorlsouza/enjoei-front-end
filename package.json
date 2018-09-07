@@ -1,8 +1,16 @@
 {
   "name": "enjoei-front-end-test",
   "main": "server.js",
+  "scripts": {
+    "client": "cd resources && npm start",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   }
 }
