@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import api from './services/api';
+
+import './styles/global';
 
 class App extends Component {
   componentDidMount() {
