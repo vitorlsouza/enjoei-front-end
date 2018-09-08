@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Radio from '@material-ui/core/Radio';
@@ -18,6 +18,7 @@ class Coupon extends Component {
   render() {
     const styles = {
       color: '#f77274',
+      background: '#FFF',
     };
     return (
       <Container>
